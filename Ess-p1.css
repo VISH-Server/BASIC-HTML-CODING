@@ -1,0 +1,15 @@
+body{
+	background-color:#c0c0c0;
+}
+.main{
+	text-align:center;
+}
+.bpb{
+	color:#808080;
+	font-size:40px;
+	font-weight:bold;
+}
+#books{
+	font-style:bold;
+	font-size:20px;
+}

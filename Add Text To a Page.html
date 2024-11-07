@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Adding text to a page</title>
+<script>
+function addtext()
+{
+var sen=document.f1.sen.value;
+var nd=document.createTextNode(" "+sen);
+
+document.getElementById("P1").insertBefore(nd);
+}
+</script>
+</head>
+<body>
+<h1><u>Create Your Own Content</u></h1>
+<p Id="P1">Helo,How r u?</p>
+<form name="f1">
+<input type="text" name="sen" size="70">
+<input type="button" value = "Add" onclick="addtext();">
+</form>
+</body>
+</html>

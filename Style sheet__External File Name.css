@@ -1,0 +1,17 @@
+
+h2{
+	text-align:center;
+	text-decoration:underline;
+	color:green;
+	font-size:xx-large;
+}
+p
+{
+	margin-left:15px;
+	color:yellow;
+	font-family:verdana;
+}
+body
+{
+	background-color:lightblue
+}

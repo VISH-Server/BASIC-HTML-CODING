@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Highlited word</title>
+</head>
+<body>
+<p>
+<a href="#" onmouseover="highlight()" onmouseout="normal()">
+Bold word higlighted and normal</a>
+</p>
+<p>
+<b>html</b> tag based language<b>static websites are developed</b> in html
+<b>PHP,JSP</b> are use in dynamic website </p>
+</body>
+<script>
+var bit;
+window.onload=bold_items();
+function bold_items()
+{
+bit= document.getElementsByTagName('b');
+}
+function highlight()
+{
+var j;
+for(j=0;j<bit.length;j++)
+{
+bit[j].style.color="red";
+}
+}
+function normal()
+{
+var i;
+for(i=0;i<bit.length;i++)
+{
+bit[i].style.color="green";
+}
+}
+</script>
+</html>

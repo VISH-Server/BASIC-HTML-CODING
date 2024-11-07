@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>CASE UPPER LOWER</title>
+<script>
+function upper()
+{
+ch=""
+ch=document.f1.tt.value
+ch1=ch.toUpperCase()
+document.f1.tt.value=ch1
+//document.write("<center><font size=6 color=red>",ch,"</center>")
+}
+function lower()
+{
+ch=""
+ch=document.f1.tt.value
+ch1=ch.toLowerCase()
+document.f1.tt.value=ch1
+}
+function tease()
+{
+ch=""
+x=""
+w=""
+k=""
+ch=document.f1.tt.value
+x=x+ch.charAt(0)
+x=x.toUpperCase()
+for(i=1;i<ch.length;i++)
+{
+k=ch.charAt(i)
+if(k!='')
+{
+x=x+k
+}
+else
+{
+w=ch.charAt(i+1)
+w=w.toUpperCase()
+x=x+''+w
+i++
+}
+}
+document.f1.tt.value=x
+document.f1.tt.value.style.color='red'
+}
+</script>
+</head>
+<body onkeypress=document.bgColor="aqua">
+<form name="f1">
+<input type="radio" name="m1" onclick=upper()><b>Upper Case</b><br>
+<input type="radio" name="m1" onclick=lower()><b>Lower Case</b><br>
+<input type="radio" name="m1" onclick=tease()><b>Title Case</b><br><br><br>
+<b>Enter a Text</b>
+<input type="textbox"name="tt"value=""size=20 id='lm'onclick=tt.value="">
+</form>
+</body>

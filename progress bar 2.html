@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>progress Task</title>
+</head>
+<body>
+<h2>Download Task Progress</h2>
+<p>Progress Bar:<progress id="bar" value ="0" max="100">
+<script>
+var c=0;
+var pbar=document.getElementById("bar");
+function count()
+{
+if(c<=100)
+{
+c=c+1;
+pbar.value=c;
+
+}
+setTimeout("count()",500);
+}
+count();
+</script>
+</body>
+</html>

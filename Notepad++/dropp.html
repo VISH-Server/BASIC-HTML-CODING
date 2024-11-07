@@ -1,0 +1,24 @@
+
+<html> 
+<head>
+<title> Remove item from drop down list</title>
+</head>
+<body>
+ <form>
+<select id="selectcol">
+<option>Green </option>
+<option>Aqua </option>
+<option>Black </option> 
+<option> Red </option>
+</select>
+<input type="button" value = "Remove colors" onclick="colremove()"> 
+</form>
+</body>
+<script>
+function colremove()
+{
+Var a = document.getElementById("selectcol");
+a.remove(a.selctedIndex);
+}
+</script>
+</html>

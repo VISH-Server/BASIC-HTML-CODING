@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Highlight</title>
+</head>
+<body>
+<p><a href="#" onmouseover="highlight()" onmouseout="normal()">Bold word highlighted and normal</a></p>
+<p><b>Hi</b> my name is nirupama<b> Html</b> is used to design<b> web structure</b></p>
+</body>
+<script>
+var bitem;
+window.onload=bold_items();
+function bold_items()
+{
+bitem=document.getElementsByTagName('b');
+}
+function highlight()
+{
+var j;
+for(j=0;j<bitem.length;j++)
+{
+bitem[j].style.color="red";
+}
+}
+function normal()
+{
+var i;
+for(i=0;i<bitem.length;i++)
+{
+bitem[i].style.color="black";
+}
+}
+</script>
+</html>
